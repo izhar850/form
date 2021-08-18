@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+    <title>Form</title>
+      <script>
+    function myFunction(){
+        let fname = document.getElementById("fname").value;
+       
+       document.getElementById("fname1").value = fname;
+       
+       let mname = document.getElementById("mname").value;
+       
+       document.getElementById("mname1").value = mname;
+       
+          let lname = document.getElementById("lname").value;
+       
+       document.getElementById("lname1").value = lname;
+       
+          var mb = document.getElementById("mobile").value;
+       
+       document.getElementById("mobile1").value = mb;
+       
+          let email = document.getElementById("email").value;
+       
+       document.getElementById("email1").value = email;
+
+       
+       let psw = document.getElementById("psw").value;
+       
+       document.getElementById("psw1").value = psw;
+       
+       let address = document.getElementById("address").value;
+       
+       document.getElementById("address1").value = address;
+       
+       let date = document.getElementById("date").value;
+       
+       document.getElementById("date1").value = date;
+       
+       let male = document.getElementById("male").value;
+       
+       document.getElementById("male1").value = male;
+       
+        let female = document.getElementById("female").value;
+       
+       document.getElementById("female1").value = female;
+       
+       let drop = document.getElementById("drop").value;
+       
+       document.getElementById("drop1").value = drop;
+       
+       
+        }
+  </script>
+  
+  
+  <style>
+  body{
+    background-color:#bddbd6;
+  }
+
+  </style>
+  </head>
+  <body>
+    
+    <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+            <h1>Form A</h1>
+                <form>
+                    
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="fname" name="fname1" placeholder="Enter First Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="mname" placeholder="Enter Middle Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="lname" placeholder="Enter Last Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input class="form-control" type="number" id="mobile" placeholder="Enter Mobile Number">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input class="form-control" type="Email" id="email" placeholder="Enter Email"> 
+                    </div>
+                    
+                    <div class="form-group">
+                        <input class="form-control" type="password" id="psw" placeholder="Enter Password"> 
+                    </div>
+                    
+                     <div class="form-group">
+                        <input class="form-control" type="textarea" id="address" placeholder="Enter Address"> 
+                    </div>
+                    
+                    <div class="form-group">
+                    <input id="date" class="form-control" type="date">
+                    </div>
+                    
+                    <div class="form-check-inline">
+                        <label for="g" class="form-check-label">Male 
+                        <input id="male" class="form-check-input" type="radio" name="g" value="Male">
+                        </label>
+                        
+                           <label for="g" class="form-check-label">Female 
+                        <input id="female" class="form-check-input" type="radio" name="g" value="Female">
+                        </label>
+                       
+                    </div>
+                    
+                    <br>
+                    
+                    <label>Select Course:</label>
+                    <div>
+                        <select id="drop">
+                            <option>Engineering</option>
+                            <option>Diploma</option>
+                            <option>Bsc</option>
+                        </select>
+                    </div>
+                </form>
+                <br>
+                <a onclick="myFunction()" class="btn btn-success">Register</a>
+    </div>
+    
+    <div class="col">
+      <h1>Form B(<a onclick="myFunction()" class="btn btn-info">Same as Form A</a>)</h1>
+                <form>
+                    
+                    <div class="form-group">
+                        <input  class="form-control" type="text" id="fname1" placeholder="Enter First Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="mname1" placeholder="Enter Middle Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="lname1" placeholder="Enter Last Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input class="form-control" type="number" id="mobile1" placeholder="Enter Mobile Number">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input class="form-control" type="Email" id="email1" placeholder="Enter Email"> 
+                    </div>
+                    
+                    <div class="form-group">
+                        <input class="form-control" type="password" id="psw1" placeholder="Enter Password"> 
+                    </div>
+                     <div class="form-group">
+                        <input class="form-control" type="textarea" id="address1" placeholder="Enter Address"> 
+                    </div>
+                    
+                    <div class="form-group">
+                    <input id="date1" class="form-control" type="date">
+                    </div>
+                    
+                    <div class="form-check-inline">
+                        <label for="g" class="form-check-label">Male 
+                        <input id="male1" class="form-check-input" type="radio" name="g" value="Male">
+                        </label>
+                        
+                           <label for="g" class="form-check-label">Female 
+                        <input id="female1" class="form-check-input" type="radio" name="g" value="Female">
+                        </label>
+                       
+                    </div>
+                    
+                    <br>
+                    
+                    <label>Select Course:</label>
+                    <div>
+                        <select id="drop1">
+                            <option>Engineering</option>
+                            <option>Diploma</option>
+                            <option>Bsc</option>
+                        </select>
+                    </div>
+                </form>
+                <br>
+                <button class="btn btn-success">Register</button>
+    </div>
+  </div>
+   
+   
+  </body>
+</html>
