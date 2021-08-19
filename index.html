@@ -44,18 +44,67 @@
        
        document.getElementById("date1").value = date;
        
-       let male = document.getElementById("male").value;
        
-       document.getElementById("male1").value = male;
        
-        let female = document.getElementById("female").value;
-       
-       document.getElementById("female1").value = female;
+//         let gender = document.querySelector('input[id="male"]:checked');
+//         
+//         
+//         
+//         if(gender.checked){
+//       
+//           document.getElementById("male1").setAttribute('checked', true);
+//        }
+//        
+//        
+//        let gender1 = document.querySelector('input[id="fm"]:checked');
+//        
+//        if(gender1.checked){
+//             document.getElementById("fm1").setAttribute('checked', true);
+//        }
+//        
+//      
+        //final gender fix__izhar
+       const rbs = document.querySelectorAll('input[name="gender"]');
+            let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                        if(selectedValue=="male"){
+                            document.getElementById("male1").setAttribute('checked', true);
+                        }
+                        if(selectedValue=="female"){
+                            document.getElementById("fm1").setAttribute('checked', true);
+                        }
+                    break;
+                }
+                }
+                
+               
+  
        
        let drop = document.getElementById("drop").value;
        
        document.getElementById("drop1").value = drop;
        
+       
+       const cb = document.querySelector('#amt');
+     
+       if(cb.checked){
+        
+        document.getElementById("amt1").setAttribute('checked', true);
+        
+       }
+       
+       
+       const cb1 = document.querySelector('#pune');
+       if(cb1.checked){
+        document.getElementById("pune1").setAttribute('checked', true);
+       }
+       
+       const cb2 = document.querySelector('#mum');
+       if(cb2.checked){
+        document.getElementById("mum1").setAttribute('checked', true);
+       }
        
         }
   </script>
@@ -110,11 +159,11 @@
                     
                     <div class="form-check-inline">
                         <label for="g" class="form-check-label">Male 
-                        <input id="male" class="form-check-input" type="radio" name="g" value="Male">
+                        <input type="radio" id="male" class="form-check-input"  name="gender" value="male" >
                         </label>
                         
                            <label for="g" class="form-check-label">Female 
-                        <input id="female" class="form-check-input" type="radio" name="g" value="Female">
+                        <input type="radio" id="fm" class="form-check-input"  name="gender" value="female">
                         </label>
                        
                     </div>
@@ -129,6 +178,14 @@
                             <option>Bsc</option>
                         </select>
                     </div>
+                    <br>
+                    <label>Choose City</label>
+                    <input id="amt" type="checkbox" value="Amravati" name="amt">
+                    <label for="amt">Amravati</label>
+                    <input id="pune" type="checkbox" value="Pune" name="pune">
+                    <label for="pune">Pune</label>
+                    <input id="mum" type="checkbox" value="Mumbai" name="mumbai">
+                    <label for="mum">Mumbai</label>
                 </form>
                 <br>
                 <a onclick="myFunction()" class="btn btn-success">Register</a>
@@ -162,7 +219,7 @@
                         <input class="form-control" type="password" id="psw1" placeholder="Enter Password"> 
                     </div>
                      <div class="form-group">
-                        <input class="form-control" type="textarea" id="address1" placeholder="Enter Address"> 
+                        <input class="form-control" type="textarea" id="address1" placeholder="Enter Address" rows="4" cols="50"> 
                     </div>
                     
                     <div class="form-group">
@@ -171,11 +228,11 @@
                     
                     <div class="form-check-inline">
                         <label for="g" class="form-check-label">Male 
-                        <input id="male1" class="form-check-input" type="radio" name="g" value="Male">
+                        <input id="male1" class="form-check-input" type="radio" name="gender1" value="Male">
                         </label>
                         
                            <label for="g" class="form-check-label">Female 
-                        <input id="female1" class="form-check-input" type="radio" name="g" value="Female">
+                        <input id="fm1" class="form-check-input" type="radio" name="gender1" value="Female">
                         </label>
                        
                     </div>
@@ -190,6 +247,14 @@
                             <option>Bsc</option>
                         </select>
                     </div>
+                    <br>
+                    <label>Choose City</label>
+                    <input id="amt1" type="checkbox" value="Amravati">
+                    <label for="amt1">Amravati</label>
+                    <input id="pune1" type="checkbox" value="Pune">
+                    <label for="pune1">Pune</label>
+                    <input id="mum1" type="checkbox" value="Mumbai">
+                    <label for="mum1">Mumbai</label>
                 </form>
                 <br>
                 <button class="btn btn-success">Register</button>
